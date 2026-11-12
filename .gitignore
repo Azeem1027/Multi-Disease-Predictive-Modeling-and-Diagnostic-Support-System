@@ -26,3 +26,5 @@ data/
 
 # Environment secrets (if you add API keys later)
 .env
+
+models/*.pkl
