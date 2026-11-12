@@ -1,0 +1,129 @@
+{
+  "disease": "diabetes",
+  "primary_model": "Support Vector Machine (RBF)",
+  "baseline_model": "Logistic Regression",
+  "threshold_used": 0.21000000000000002,
+  "default_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.7338,
+    "precision": 0.597,
+    "recall": 0.7407,
+    "f1": 0.6612,
+    "f2": 0.7067,
+    "roc_auc": 0.8076,
+    "confusion_matrix": [
+      [
+        73,
+        27
+      ],
+      [
+        14,
+        40
+      ]
+    ]
+  },
+  "tuned_metrics": {
+    "threshold": 0.21000000000000002,
+    "accuracy": 0.6688,
+    "precision": 0.5149,
+    "recall": 0.963,
+    "f1": 0.671,
+    "f2": 0.8202,
+    "roc_auc": 0.8076,
+    "confusion_matrix": [
+      [
+        51,
+        49
+      ],
+      [
+        2,
+        52
+      ]
+    ]
+  },
+  "baseline_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.7078,
+    "precision": 0.5738,
+    "recall": 0.6481,
+    "f1": 0.6087,
+    "f2": 0.6318,
+    "roc_auc": 0.8113,
+    "confusion_matrix": [
+      [
+        74,
+        26
+      ],
+      [
+        19,
+        35
+      ]
+    ]
+  },
+  "best_params": {
+    "model__C": 0.5,
+    "model__gamma": 0.05
+  },
+  "smote_applied": true,
+  "smote_reason": "Class ratio is 1.87:1 (exceeds 1.5:1 threshold). SMOTE applied in training CV.",
+  "feature_names": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "feature_ranges": {
+    "Pregnancies": {
+      "min": 0.0,
+      "max": 17.0,
+      "median": 3.0,
+      "type": "numeric"
+    },
+    "Glucose": {
+      "min": 44.0,
+      "max": 199.0,
+      "median": 117.0,
+      "type": "numeric"
+    },
+    "BloodPressure": {
+      "min": 24.0,
+      "max": 122.0,
+      "median": 72.0,
+      "type": "numeric"
+    },
+    "SkinThickness": {
+      "min": 7.0,
+      "max": 99.0,
+      "median": 29.0,
+      "type": "numeric"
+    },
+    "Insulin": {
+      "min": 14.0,
+      "max": 846.0,
+      "median": 125.0,
+      "type": "numeric"
+    },
+    "BMI": {
+      "min": 18.2,
+      "max": 67.1,
+      "median": 32.3,
+      "type": "numeric"
+    },
+    "DiabetesPedigreeFunction": {
+      "min": 0.078,
+      "max": 2.42,
+      "median": 0.3725,
+      "type": "numeric"
+    },
+    "Age": {
+      "min": 21.0,
+      "max": 81.0,
+      "median": 29.0,
+      "type": "numeric"
+    }
+  }
+}

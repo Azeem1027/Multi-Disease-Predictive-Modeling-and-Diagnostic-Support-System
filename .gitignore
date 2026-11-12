@@ -1,0 +1,28 @@
+# Virtual environments & local Python installations
+.venv/
+.python311/
+venv/
+env/
+
+# Python & Pytest cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# IDE & Editor settings
+.idea/
+.vscode/
+
+# OS-generated junk files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Raw datasets & draft documents
+Datasets/
+data/
+*.docx
+
+# Environment secrets (if you add API keys later)
+.env

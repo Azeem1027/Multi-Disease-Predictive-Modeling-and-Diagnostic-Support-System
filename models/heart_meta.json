@@ -1,0 +1,192 @@
+{
+  "disease": "heart",
+  "primary_model": "Multi-Layer Perceptron (Keras)",
+  "baseline_model": "Logistic Regression",
+  "threshold_used": 0.31,
+  "default_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.825,
+    "precision": 0.8043,
+    "recall": 0.7551,
+    "f1": 0.7789,
+    "f2": 0.7645,
+    "roc_auc": 0.9109,
+    "confusion_matrix": [
+      [
+        62,
+        9
+      ],
+      [
+        12,
+        37
+      ]
+    ]
+  },
+  "tuned_metrics": {
+    "threshold": 0.31,
+    "accuracy": 0.875,
+    "precision": 0.8148,
+    "recall": 0.898,
+    "f1": 0.8544,
+    "f2": 0.88,
+    "roc_auc": 0.9109,
+    "confusion_matrix": [
+      [
+        61,
+        10
+      ],
+      [
+        5,
+        44
+      ]
+    ]
+  },
+  "baseline_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.825,
+    "precision": 0.7917,
+    "recall": 0.7755,
+    "f1": 0.7835,
+    "f2": 0.7787,
+    "roc_auc": 0.9074,
+    "confusion_matrix": [
+      [
+        61,
+        10
+      ],
+      [
+        11,
+        38
+      ]
+    ]
+  },
+  "smote_applied": false,
+  "smote_reason": "Class ratio is 1.43:1 (below 1.5:1 threshold, already balanced). SMOTE skipped.",
+  "feature_names": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak",
+    "ca",
+    "sex_0.0",
+    "sex_1.0",
+    "cp_1.0",
+    "cp_2.0",
+    "cp_3.0",
+    "cp_4.0",
+    "fbs_0.0",
+    "fbs_1.0",
+    "restecg_0.0",
+    "restecg_1.0",
+    "restecg_2.0",
+    "exang_0.0",
+    "exang_1.0",
+    "slope_1.0",
+    "slope_2.0",
+    "slope_3.0",
+    "thal_3.0",
+    "thal_6.0",
+    "thal_7.0"
+  ],
+  "feature_ranges": {
+    "age": {
+      "min": 28.0,
+      "max": 77.0,
+      "median": 52.0,
+      "type": "numeric"
+    },
+    "trestbps": {
+      "min": 92.0,
+      "max": 200.0,
+      "median": 130.0,
+      "type": "numeric"
+    },
+    "chol": {
+      "min": 85.0,
+      "max": 603.0,
+      "median": 242.5,
+      "type": "numeric"
+    },
+    "thalach": {
+      "min": 71.0,
+      "max": 202.0,
+      "median": 146.0,
+      "type": "numeric"
+    },
+    "oldpeak": {
+      "min": 0.0,
+      "max": 6.2,
+      "median": 0.2,
+      "type": "numeric"
+    },
+    "ca": {
+      "min": 0.0,
+      "max": 3.0,
+      "median": 0.0,
+      "type": "numeric"
+    },
+    "sex": {
+      "options": [
+        0.0,
+        1.0
+      ],
+      "default": 0.0,
+      "type": "categorical"
+    },
+    "cp": {
+      "options": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "default": 1.0,
+      "type": "categorical"
+    },
+    "fbs": {
+      "options": [
+        0.0,
+        1.0
+      ],
+      "default": 0.0,
+      "type": "categorical"
+    },
+    "restecg": {
+      "options": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "default": 0.0,
+      "type": "categorical"
+    },
+    "exang": {
+      "options": [
+        0.0,
+        1.0
+      ],
+      "default": 0.0,
+      "type": "categorical"
+    },
+    "slope": {
+      "options": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "default": 1.0,
+      "type": "categorical"
+    },
+    "thal": {
+      "options": [
+        3.0,
+        6.0,
+        7.0
+      ],
+      "default": 3.0,
+      "type": "categorical"
+    }
+  },
+  "keras_model_file": "heart_mlp.keras"
+}

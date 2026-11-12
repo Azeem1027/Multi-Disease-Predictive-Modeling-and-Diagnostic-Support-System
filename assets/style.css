@@ -1,0 +1,122 @@
+/* Custom Glassmorphism & Medical Theme CSS */
+
+:root {
+  --bg-deep: #031a22;
+  --bg-panel: rgba(7, 40, 51, 0.78);
+  --border-line: rgba(143, 227, 234, 0.25);
+  --accent-cyan: #8fe3ea;
+  --text-main: #f0f7f8;
+  --text-muted: #9db9bf;
+  --risk-low: #10b981;
+  --risk-mod: #f59e0b;
+  --risk-high: #ef4444;
+}
+
+/* Background image overlay container */
+.stApp {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+}
+
+/* Background container with overlay */
+.main-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.28) contrast(1.1);
+}
+
+/* Glassmorphic Cards */
+.glass-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-line);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  margin-bottom: 20px;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-cyan);
+}
+
+/* Organ Selection Grid */
+.organ-card {
+  background: rgba(10, 48, 60, 0.7);
+  border: 1px solid var(--border-line);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.25s ease-in-out;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.organ-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(143, 227, 234, 0.15);
+}
+
+.organ-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 12px auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+/* Risk Badges */
+.badge-low {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid #10b981;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-moderate {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid #f59e0b;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-high {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid #ef4444;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Footer style */
+.med-footer {
+  text-align: center;
+  padding: 24px 0 16px 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  border-top: 1px solid rgba(143, 227, 234, 0.1);
+  margin-top: 48px;
+}
+
